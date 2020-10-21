@@ -1,0 +1,14 @@
+.file_url
+{
+	height: 30px;
+	color: #111111;
+	background: #DAE0E5;
+	padding: 0 20px;
+	border: 1px solid #000000;
+	border-left: none;
+}
+
+.address
+{
+	text-align: center;
+}

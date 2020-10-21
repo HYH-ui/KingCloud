@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>王网盘</title>
+		<script src="js/vue.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+		<link rel="stylesheet" type="text/css" href="css/content.css"/>
+	</head>
+	<body>
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		  <a class="navbar-brand" href="#">{%用户名%}</a>
+		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		    <span class="navbar-toggler-icon"></span>
+		  </button>
+		
+		  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+		    <ul class="navbar-nav mr-auto">
+		      <li class="nav-item active">
+		        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+		      </li>
+		      <li class="nav-item">
+		        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+		          新建文件夹
+		        </button>
+				<!--模态框-->
+				<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+				  <div class="modal-dialog">
+				    <div class="modal-content">
+				      <div class="modal-header">
+				        <h5 class="modal-title" id="exampleModalLabel">请输入新建文件夹名</h5>
+				        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				          <span aria-hidden="true">&times;</span>
+				        </button>
+				      </div>
+				      <div class="modal-body">
+						  <!--输入新建文件夹名-->
+				        <form class="form-inline my-2 my-lg-0">
+				          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+				        </form>
+				      </div>
+				      <div class="modal-footer">
+				        <button type="button" class="btn btn-secondary" data-dismiss="modal">取消</button>
+				        <button type="button" class="btn btn-primary">创建</button>
+				      </div>
+				    </div>
+				  </div>
+				</div>
+		      </li>
+		      <li class="nav-item dropdown">
+		        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		          上传文件
+		        </a>
+		        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+					<input type="file" id="inputfile">
+					<button type="button" class="btn btn-primary">Primary</button>
+		        </div>
+		      </li>
+		    </ul>
+		    <form class="form-inline my-2 my-lg-0">
+		      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+		      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+		    </form>
+		  </div>
+		</nav>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="address file_url col-sm-3 col-md-1 ">
+					<img src="img/e1100f3e5f1eeee2d733f8e5a1c76032.jpg" style="height: 20px;">
+					文件位置	
+				</div>
+				<div class="col-sm-9 col-md-11 file_url">
+					D:\phpstudy_pro\WWW\www.test2.com\GH\connet
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-1">
+					
+				</div>
+				
+			</div>
+		</div>
+		<ul class="list-group">
+		  <li class="list-group-item">
+			<a href="">
+				上一级
+			</a></li>
+		  <li class="list-group-item">
+			<a href="">
+				文件夹1
+			</a></li></li>
+		  <li class="list-group-item">
+			<a href="">
+				文件夹2
+			</a></li></li>
+		  <li class="list-group-item">
+			<a href="">
+				文件1
+			</a></li></li>
+		  <li class="list-group-item">
+			<a href="">
+				文件2
+			</a></li></li>
+		</ul>
+		<script src="js/jquery-3.5.1.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/popper.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="./js/bootstrap.js"></script>
+	</body>
+</html>
